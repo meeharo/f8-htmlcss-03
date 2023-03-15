@@ -29,13 +29,15 @@ a {
 
 .btn {
     --btn-color: #2E80CE;
+    --height: 60px;
 
-    height: 60px;
+    height: var(--height);
+    display: inline-block;
     min-width: 205px;
     padding: 0 20px;
     font-weight: 400;
     font-size: 1.8rem;
-    line-height: 1.67;
+    line-height: var(--height);
     text-align: center;
     color: #FFFFFF;
     background: var(--btn-color);
@@ -118,7 +120,7 @@ a {
     margin-left: 42px;
 }
 
-.action__login,
+.header-action__login,
 .navbar__link {
     padding: 4px 21px;
     font-weight: 300;
@@ -144,10 +146,110 @@ a {
     text-shadow: 1px 0 0 currentColor;
 }
 
-.action__signup {
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login {
+    margin-right: 28px;
+}
+
+.header-action__signup {
     font-family: 'Sora', sans-serif;
     height: 44px;
     line-height: 1.75;
     min-width: 104px;
     font-size: 1.6rem;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+    padding-bottom: 110px;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    width: 44%;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-size: 7.0rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.hero__desc {
+    margin: 22px 0 38px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #C9D2DA;
+}
+
+.hero__phone {
+    margin-left: 33px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67px;
+    color: #FFFFFF;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__images {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+.hero__img:first-child {
+    position: relative;
+    margin-right: -6px;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+}
+
+/* Service */
+.service {
+    margin: 170px 0;
+}
+
+.service__heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #10375C;
+}
+
+.service__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__desc {
+    margin: 18px auto 70px;
+    text-align: center;
+    width: 468px;
+    color: #575F66;
 }
