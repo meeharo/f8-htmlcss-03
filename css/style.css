@@ -3,7 +3,7 @@
 }
 
 :root {
-    --header-bg: #10375C;
+    --primary-color: #10375C;
 }
 
 html {
@@ -54,7 +54,7 @@ a {
 .header {
     padding-top: 30px;
     min-height: 100vh;
-    background: var(--header-bg);
+    background: var(--primary-color);
 }
 
 .header-top {
@@ -230,7 +230,7 @@ a {
 
 /* Service */
 .service {
-    margin: 170px 0;
+    padding: 170px 0;
 }
 
 .service__heading {
@@ -239,12 +239,7 @@ a {
     font-size: 5rem;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: #10375C;
-}
-
-.service__row {
-    display: flex;
-    justify-content: space-between;
+    color: var(--primary-color);
 }
 
 .service__desc {
@@ -252,4 +247,73 @@ a {
     text-align: center;
     width: 468px;
     color: #575F66;
+}
+
+.service__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.service-item {
+    width: 470px;
+    padding: 22px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+    background: #fff;
+    transition: .25s;
+}
+
+.service-item:hover {
+    position: relative;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+    background: #2e80ce;
+    color: #fff;
+}
+
+.service-item__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 19px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    background-color: #EFF6FD;
+    color: var(--primary-color);
+    transition: 0.25s;
+}
+
+.service-item__heading {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.27;
+    color: var(--primary-color);
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #575F66;
+}
+
+.service-btn {
+    margin-top: 55px;
 }
