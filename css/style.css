@@ -17,6 +17,14 @@ body {
 }
 
 /* Common */
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -622,7 +630,7 @@ a {
 .news-item__img {
     display: block;
     width: 100%;
-    height: 172px;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -659,4 +667,159 @@ a {
 
 .news-item__more:hover {
     color: #2E80CE;
+}
+
+/* Appointment */
+.appointment {
+    margin-top: 170px;
+}
+
+.appointment__inner {
+    padding: 100px 179px;
+    background: #F7FBFF;
+    border-radius: 4px;
+}
+
+.appointment__heading {
+    position: relative;
+}
+
+.appointment__heading::before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+}
+
+.appointment__desc{
+    max-width: 617px;
+    margin: 38px 0;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #575F66;
+}
+
+/* Footer */
+.footer {
+    padding: 100px 135px 42px;
+    background: #10375C;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 22px;
+    max-width: 336px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: #A9B3BB;
+}
+
+.footer__heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #FFFFFF;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #A9B3BB;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.footer__social-btn {
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    color: #2E80CE;
+    transition: .25s;
+}
+
+.footer__social-btn:hover {
+    background: #2E80CE;
+    color: #fff;
+}
+
+.footer-form {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.footer-form__input {
+    width: 212px;
+    height: 46px;
+    padding: 0 10px;
+    border: 1px solid #406181;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+}
+
+.footer-form__input::placeholder {
+    font-weight: 400;
+    font-family: 'open sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #9CA8B1;
+}
+
+.footer-form__submit {
+    --height: 46px;
+    
+    min-width: 108px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+}
+
+.footer__copyright {
+    padding-top: 28px;
+    border-top: 1px solid #406181;
+}
+
+.footer__copyright-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #AAB3BA;
 }
