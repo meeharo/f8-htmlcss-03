@@ -793,6 +793,7 @@ a {
     border-radius: 4px;
     background-color: transparent;
     outline: none;
+    color: #fff;
 }
 
 .footer-form__input::placeholder {
@@ -805,7 +806,7 @@ a {
 
 .footer-form__submit {
     --height: 46px;
-    
+
     min-width: 108px;
     font-size: 1.4rem;
     border-radius: 4px;
